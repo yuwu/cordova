@@ -1,4 +1,4 @@
-#Wed Feb 07 19:39:18 CST 2018
+#Wed Feb 07 20:17:11 CST 2018
 base.0=/Users/applekf/git/cordova/app/build/intermediates/transforms/dexMerger/debug/0
 path.0=classes.dex
 renamed.0=classes.dex

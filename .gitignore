@@ -4,6 +4,7 @@ local.properties
 /gradlew
 /gradlew.bat
 /gradle
+.gradle
 # Ant builds
 ant-build
 ant-gen
@@ -15,6 +16,5 @@ out
 .DS_Store
 app/build/
 .idea/
-.gradle
 .idea/workspace.xml
 CordovaLib/build/

@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Feb 07 19:39:19 CST 2018
+#Wed Feb 07 20:17:11 CST 2018
 2.base=/Users/applekf/git/cordova/app/build/intermediates/assets/debug
 5.set=ASSET
 0.path=www/js/index.js
