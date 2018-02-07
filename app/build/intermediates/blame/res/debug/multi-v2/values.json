@@ -1,6 +1,28 @@
 {
     "logs": [
         {
+            "outputFile": "/Users/applekf/git/cordova/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/applekf/git/cordova/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "7,3,5",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "349,148,239",
+                        "endColumns": "63,44,58",
+                        "endOffsets": "408,188,293"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,119,164",
+                        "endColumns": "63,44,58",
+                        "endOffsets": "114,159,218"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "/Users/wuyu/cordova/cordova/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {

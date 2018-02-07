@@ -13,3 +13,8 @@ out
 # Gradle builds
 /build
 .DS_Store
+app/build/
+.idea/
+.gradle
+.idea/workspace.xml
+CordovaLib/build/

@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/wuyu/cordova/cordova/CordovaLib/assets"/><source path="/Users/wuyu/cordova/cordova/CordovaLib/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/wuyu/cordova/cordova/CordovaLib/src/debug/assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/applekf/git/cordova/CordovaLib/assets"/><source path="/Users/applekf/git/cordova/CordovaLib/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/applekf/git/cordova/CordovaLib/src/debug/assets"/></dataSet></merger>
