@@ -261,6 +261,9 @@ dependencies {
     // SUB-PROJECT DEPENDENCIES START
     implementation project(path: ':CordovaLib')
     // SUB-PROJECT DEPENDENCIES END
+    implementation files('libs/gson-2.2.4.jar')
+    implementation files('libs/okhttp-3.4.1.jar')
+    implementation files('libs/okio-1.10.0.jar')
 }
 
 def promptForReleaseKeyPassword() {

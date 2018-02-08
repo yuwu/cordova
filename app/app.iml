@@ -106,6 +106,9 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 26 Platform (1)" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="__local_aars__:/Users/applekf/git/cordova/app/libs/okio-1.10.0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="__local_aars__:/Users/applekf/git/cordova/app/libs/gson-2.2.4.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="__local_aars__:/Users/applekf/git/cordova/app/libs/okhttp-3.4.1.jar:unspecified@jar" level="project" />
     <orderEntry type="module" module-name="CordovaLib" />
   </component>
 </module>

@@ -16,6 +16,12 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
+var Toast = {
+    show: function(message){
+        cordova.exec(function(success){}, function(error){}, 'Toasts', 'showShort', [message]);
+    }
+}
 var app = {
     // Application Constructor
     initialize: function () {
@@ -27,6 +33,8 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function () {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener('pause', this.onPause, false);
+        document.addEventListener('resume', this.onResume, false);
     },
     // deviceready Event Handler
     //
@@ -34,17 +42,61 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function () {
         app.receivedEvent('deviceready');
+        document.getElementById("donwload").addEventListener("click", function() {
+            //Toast.show("donwload");
+            cordova.exec(function(success){}, function(error){}, 'FileSystem', 'mkdirs', ["cordova"]);
+            cordova.exec(function(success){}, function(error){}, 'FileSystem', 'mkdirs', ["cordova/download"]);
+
+            var doenloadUrl = "https://b-ssl.duitang.com/uploads/item/201311/28/20131128155314_yQyMj.jpeg";
+            var dir = "cordova/download";
+            var name = "20131128155314_yQyMj.jpeg";
+
+             cordova.exec(
+                 function(progress){
+                    app.showText("下载" + progress);
+
+                    if(progress == 100){
+                        Toast.show("下载完成:/sdcard/" + dir + "/" + name);
+                        app.showText("");
+                    }
+                 },
+                 function(error){
+                    console.log('error: ' + error);
+                 },
+              'Download', 'download', [doenloadUrl, dir, name]);
+         });
+
+        document.getElementById("network").addEventListener("click", function() {
+            Toast.show("network");
+         });
+
+        document.getElementById("memory").addEventListener("click", function() {
+            Toast.show("memory");
+         });
+
+        document.getElementById("socket").addEventListener("click", function() {
+            Toast.show("socket");
+         });
+
+        document.getElementById("tts").addEventListener("click", function() {
+            Toast.show("tts");
+         });
+    },
+    showText: function (message){
+        var div = document.getElementById("text");
+        div.innerHTML= message;
     },
     // Update DOM on a Received Event
     receivedEvent: function (id) {
-        var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
-
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
-
         console.log('Received Event: ' + id);
+    },
+
+    onPause: function() {
+        console.log('onPause');
+    },
+
+    onResume: function(event) {
+        console.log('onResume');
     }
 };
 

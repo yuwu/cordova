@@ -1,1 +1,1 @@
-[]
+[{"name":"android.local.jars:gson-2.2.4.jar:8fee7c0de3241b9b122b655fe132882b204fee51","index":0,"scopes":["EXTERNAL_LIBRARIES"],"types":["CLASSES"],"format":"JAR","present":true},{"name":"android.local.jars:okio-1.10.0.jar:97959f96ac5f88624993469f0f666941972a1982","index":1,"scopes":["EXTERNAL_LIBRARIES"],"types":["CLASSES"],"format":"JAR","present":true},{"name":"android.local.jars:okhttp-3.4.1.jar:c9109b8a8b96f98f80b0766848849b04e17a996c","index":2,"scopes":["EXTERNAL_LIBRARIES"],"types":["CLASSES"],"format":"JAR","present":true}]
