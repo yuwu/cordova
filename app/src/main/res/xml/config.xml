@@ -55,4 +55,16 @@
       <preference name="InAppBrowserStorageEnabled" value="true" />
       <preference name="disallowOverscroll" value="true" />
     -->
+    <feature name="Toasts">
+        <param name="android-package" value="com.cordova.plugin.Toasts"/>
+    </feature>
+    <feature name="Download">
+        <param name="android-package" value="com.cordova.plugin.Download"/>
+    </feature>
+    <feature name="NativePage">
+        <param name="android-package" value="com.cordova.plugin.NativePageTransitions"/>
+    </feature>
+    <feature name="FileSystem">
+        <param name="android-package" value="com.cordova.plugin.FileSystem"/>
+    </feature>
 </widget>
